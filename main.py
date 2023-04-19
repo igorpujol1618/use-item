@@ -14,7 +14,6 @@ class Content(ABC):
     def modHP(self):
         """Abstract class that describes the effects of the contents"""
 
-
 class GreenFlask(Selector):
     """Concrete class that describes the Green flask"""
     def createContent(self) -> Content:
@@ -53,7 +52,6 @@ def drink():
         flask_color = input('What flask will you drink?(Red flask, Green flask)')
         if flask_color in flasks:
             return flasks[flask_color].accessContent()
-
 
 def main():
     drink()
